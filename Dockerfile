@@ -1,4 +1,4 @@
-# Stage 1: Build the Next.js application
+# Build stage
 FROM node:18-alpine AS builder
 WORKDIR /app
 COPY package.json package-lock.json ./
@@ -6,26 +6,19 @@ RUN npm ci --frozen-lockfile
 COPY . .
 RUN npm run build
 
-# Stage 2: Set up the production environment
-FROM nginx:alpine
-
-# Install Node.js in the Nginx image
-RUN apk add --update nodejs npm
-
-# Set working directory
+# Production stage
+FROM node:18-alpine
 WORKDIR /app
 
-# Copy built Next.js application
+# Copy necessary files
+COPY --from=builder /app/package.json ./
+COPY --from=builder /app/package-lock.json ./
 COPY --from=builder /app/.next ./.next
-COPY --from=builder /app/node_modules ./node_modules
-COPY --from=builder /app/package.json ./package.json
 COPY --from=builder /app/public ./public
+COPY --from=builder /app/node_modules ./node_modules
 
-# Copy the custom Nginx configuration
-COPY nginx.conf /etc/nginx/conf.d/default.conf
+# Expose the port your app runs on
+EXPOSE 3000
 
-# Expose port 80
-EXPOSE 80
-
-# Start Nginx and Node.js application
-CMD npm start & nginx -g 'daemon off;'
+# Start the app
+CMD ["npm", "start"]
