@@ -64,19 +64,19 @@ export default function Conneftions() {
       {isSmallDevice ? (
         // Directly render Section 2 for small devices
         <section className="h-screen py-8 grid grid-cols-1 md:grid-cols-2 md:p-8">
-          <div className="p-8 text-center flex flex-col justify-center items-center">
+          <div className="p-8 mb-[-16rem] text-center flex flex-col justify-center items-center">
             <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl text-[#BBFFFF] font-bold">
               Conneftions
             </h2>
             <p className="text-xs sm:text-sm md:text-base text-white mt-4 leading-relaxed font-light tracking-wide">
               Be more than just a name and number. Your Conneft profile tells
-              your professional story, <br /> skills, achievements, and trusted
-              connections. making every first impression count. Stand <br /> out
+              your professional story, skills, achievements, and trusted
+              connections. making every first impression count. Stand out
               before you even say hello.
             </p>
           </div>
-          <div className="mt-[-8rem] flex justify-center items-center">
-            <Image src="/profile.svg" alt="Image" width={400} height={400} />
+          <div className="flex justify-center items-center">
+            <Image src="/Connefctions111.png" alt="Image" width={300} height={300} />
           </div>
         </section>
       ) : (
@@ -116,21 +116,21 @@ export default function Conneftions() {
             >
               <div className="p-4 flex justify-center items-center">
                 <Image
-                  src="/profile.svg"
+                  src="/Connefctions111.png"
                   alt="Image"
                   width={500}
                   height={500}
                 />
               </div>
-              <div className="p-8 md:ml-16 text-center flex flex-col justify-center items-center">
+              <div className="p-8 flex flex-col justify-center items-start ml-[-4rem]">
                 <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl text-[#BBFFFF] font-bold">
                   Conneftions
                 </h2>
-                <p className="text-xs sm:text-sm md:text-base text-white mt-4 leading-relaxed font-light tracking-wide">
+                <p className="text-xs sm:text-sm md:text-lg text-white mt-4 leading-relaxed font-light tracking-wide">
                   Be more than just a name and number. Your Conneft profile
-                  tells your professional story, <br /> skills, achievements,
+                  tells your professional story, skills, achievements,
                   and trusted connections. making every first impression count.
-                  Stand <br /> out before you even say hello.
+                  Stand out before you even say hello.
                 </p>
               </div>
             </motion.section>

@@ -70,18 +70,13 @@ export default function TapToRise() {
             </h2>
             <p className="text-xs sm:text-sm md:text-base text-white mt-4 leading-relaxed font-light tracking-wide">
               Gone are the days of fumbling for business cards or typing phone
-              numbers. Just tap <br /> in, and share your whole professional
-              story. from contact info to portfolio, all shared <br /> in a
-              blink of an eye.(with just a single tap) It&apos;s that simple..
+              numbers. Just tap in, and share your whole professional
+              story. from contact info to portfolio, all shared in a
+              blink of an eye.(with just a single tap) It&apos;s that simple.
             </p>
           </div>
           <div className="m-[-10rem] flex justify-center items-center">
-            <Image
-              src="/ttr.svg"
-              alt="Image"
-              width={400}
-              height={400}
-            />
+            <Image src="/TTR111.png" alt="Image" width={300} height={300} />
           </div>
         </section>
       ) : (
@@ -98,15 +93,14 @@ export default function TapToRise() {
               className="h-screen flex justify-center items-center"
             >
               <div className="p-8 flex flex-col justify-start items-center">
-                <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl text-[#BBFFFF] font-bold">
+              <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl text-[#BBFFFF] font-bold">
                   Tap To Rise (TTR)
                 </h2>
                 <p className="text-xs sm:text-sm md:text-base text-white mt-4 leading-relaxed font-light tracking-wide">
                   Gone are the days of fumbling for business cards or typing
-                  phone numbers. Just tap <br /> in, and share your whole
-                  professional story. from contact info to portfolio, all shared{" "}
-                  <br /> in a blink of an eye.(with just a single tap) It&apos;s
-                  that simple..
+                  phone numbers. Just tap in, and share your whole professional
+                  story, from contact info to portfolio, all shared in a blink
+                  of an eye (with just a single tap). It&apos;s that simple.
                 </p>
               </div>
             </motion.section>
@@ -121,23 +115,17 @@ export default function TapToRise() {
               className="h-screen grid grid-cols-1 md:grid-cols-2 md:p-8"
             >
               <div className="p-4 flex justify-center items-center">
-                <Image
-                  src="/ttr.svg"
-                  alt="Image"
-                  width={500}
-                  height={500}
-                />
+                <Image src="/TTR111.png" alt="Image" width={500} height={500} />
               </div>
-              <div className="p-8 md:ml-16 text-center flex flex-col justify-center items-center">
+              <div className="p-8 relative flex flex-col justify-center items-start ml-[-4rem]">
                 <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl text-[#BBFFFF] font-bold">
                   Tap To Rise (TTR)
                 </h2>
                 <p className="text-xs sm:text-sm md:text-base text-white mt-4 leading-relaxed font-light tracking-wide">
                   Gone are the days of fumbling for business cards or typing
-                  phone numbers. Just tap <br /> in, and share your whole
-                  professional story. from contact info to portfolio, all shared{" "}
-                  <br /> in a blink of an eye.(with just a single tap) It&apos;s
-                  that simple..
+                  phone numbers. Just tap in, and share your whole professional
+                  story, from contact info to portfolio, all shared in a blink
+                  of an eye (with just a single tap). It&apos;s that simple.
                 </p>
               </div>
             </motion.section>

@@ -64,20 +64,20 @@ export default function TycheAI() {
       {isSmallDevice ? (
         // Directly render Section 2 for small devices
         <section className="h-screen grid grid-cols-1 md:grid-cols-2 md:p-8">
-          <div className="p-8 text-center flex flex-col justify-center items-center">
+          <div className="p-8 mb-[-16rem] text-center flex flex-col justify-center items-center">
             <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl text-[#BBFFFF] font-bold">
               Tyche AI
             </h2>
             <p className="text-xs sm:text-sm md:text-base text-white mt-4 leading-relaxed font-light tracking-wide">
               Meet Tyche, your smart networking companion. It learns what
-              matters to <br /> you, suggests the right connections at events,
-              and helps you build <br /> relationships that align with your
-              goals. Like having a friend who always <br /> knows who you should
+              matters to you, suggests the right connections at events,
+              and helps you build relationships that align with your
+              goals. Like having a friend who always knows who you should
               meet next.
             </p>
           </div>
-          <div className="mt-[-10rem] flex justify-center items-center">
-            <Image src="/tyche-ai.svg" alt="Image" width={400} height={300} />
+          <div className="flex justify-center items-center">
+            <Image src="/TycheAi111.png" alt="Image" width={300} height={300} />
           </div>
         </section>
       ) : (
@@ -116,21 +116,20 @@ export default function TycheAI() {
               variants={section2Variants}
               className="h-screen grid grid-cols-1 md:grid-cols-2 md:p-8"
             >
-              <div className="p-8 md:ml-16 text-center flex flex-col justify-center items-center">
-                <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl text-[#BBFFFF] font-bold left-0">
+              <div className="p-8 flex flex-col justify-center items-start ml-16">
+                <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl text-[#BBFFFF] font-bold">
                   Tyche AI
                 </h2>
-                <p className="text-xs sm:text-sm md:text-base text-white mt-4 leading-relaxed font-light tracking-wide">
+                <p className="text-xs sm:text-sm md:text-lg text-white mt-4 leading-relaxed font-light tracking-wide">
                   Meet Tyche, your smart networking companion. It learns what
-                  matters to <br /> you, suggests the right connections at
-                  events, and helps you build <br /> relationships that align
-                  with your goals. Like having a friend who always <br /> knows
-                  who you should meet next.
+                  matters to you, suggests the right connections at
+                  events, and helps you build relationships that align
+                  with your goals. Like having a friend who always knows who you should meet next.
                 </p>
               </div>
               <div className="p-4 flex justify-center items-center">
                 <Image
-                  src="/tyche-ai.svg"
+                  src="/TycheAi111.png"
                   alt="Hero Image"
                   width={500}
                   height={500}

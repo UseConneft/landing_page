@@ -63,23 +63,23 @@ export default function SmartGatherings() {
     >
       {isSmallDevice ? (
         // Directly render Section 2 for small devices
-        <section className="h-screen grid grid-cols-1 md:grid-cols-2 md:p-8">
-          <div className="p-8 text-center flex flex-col justify-center items-center">
+        <section className="h-screen grid grid-cols-1 md:grid-cols-2">
+          <div className="p-8 mb-[-16rem] text-center flex flex-col justify-center items-center">
             <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl text-[#BBFFFF] font-bold">
               Smart Gatherings
             </h2>
             <p className="text-xs sm:text-sm md:text-base text-white mt-4 leading-relaxed font-light tracking-wide">
               Find your crowd, tap to connect. From business meetups to social
-              hangouts, discover <br /> events around you and link with new
-              connections instantly. One app, endless ways to <br /> connect
+              hangouts, discover events around you and link with new
+              connections instantly. One app, endless ways to connect
               with people who matter.
             </p>
           </div>
-          <div className="mt-[-10rem] flex justify-center items-center">
+          <div className=" flex justify-center items-center">
             <Image
-              src="/smart-gatherings.svg"
+              src="/SmartGatherings111.png"
               alt="Image"
-              width={400}
+              width={300}
               height={300}
             />
           </div>
@@ -117,22 +117,22 @@ export default function SmartGatherings() {
               exit="exit"
               transition={{ duration: 1 }}
               variants={section2Variants}
-              className="h-screen grid grid-cols-1 md:grid-cols-2 md:p-8"
+              className="h-screen grid grid-cols-1 md:grid-cols-2"
             >
-              <div className="p-8 md:ml-16 text-center flex flex-col justify-center items-center">
-                <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl text-[#BBFFFF] font-bold left-0">
+              <div className="p-8 flex flex-col justify-center items-start ml-16">
+                <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl text-[#BBFFFF] font-bold">
                   Smart Gatherings
                 </h2>
-                <p className="text-xs sm:text-sm md:text-base text-white mt-4 leading-relaxed font-light tracking-wide">
+                <p className="text-xs sm:text-sm md:text-lg text-white mt-4 leading-relaxed font-light tracking-wide">
                   Find your crowd, tap to connect. From business meetups to
-                  social hangouts, discover <br /> events around you and link
-                  with new connections instantly. One app, endless ways to{" "}
-                  <br /> connect with people who matter.
+                  social hangouts, discover events around you and link with new
+                  connections instantly. One app, endless ways to connect with
+                  people who matter.
                 </p>
               </div>
               <div className="p-4 flex justify-center items-center">
                 <Image
-                  src="/smart-gatherings.svg"
+                  src="/SmartGatherings111.png"
                   alt="Hero Image"
                   width={500}
                   height={500}
